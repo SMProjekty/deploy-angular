@@ -21,12 +21,12 @@ const routes: Routes = [
   {path: "calendar", component: CalendarComponent},
   {path: "adminLogin", component: AdminLoginComponent},
   {path: "adminMain", component: AdminMainComponent}, //zablokowac bezposrednie wejscie na panel admina
-  {path: "addService", component: AddServiceComponent, canActivate: [AuthGuard]},
-  {path: "editDelService", component: EditDelServiceComponent, canActivate: [AuthGuard]},
-  {path: "delVisit", component: DelVisitComponent, canActivate: [AuthGuard]},
-  {path: "vacations", component: VacationsComponent, canActivate: [AuthGuard]},
+  {path: "addService", component: AddServiceComponent},
+  {path: "editDelService", component: EditDelServiceComponent},
+  {path: "delVisit", component: DelVisitComponent},
+  {path: "vacations", component: VacationsComponent},
   {path: "raports", component: RaportsComponent},
-  {path: "workers", component: WorkersComponent, canActivate: [AuthGuard]},
+  {path: "workers", component: WorkersComponent},
   {path: "**", component: WorkersComponent},
 
   {path: 'calendarObject', component: CalendarObjectComponent}

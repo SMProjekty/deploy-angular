@@ -12,12 +12,14 @@ export class AdminLoginComponent {
   constructor(private router: Router) {}
 
   checkPassword(pass: String) {
-    this.admin_password = '';
-    if (pass === 'qwe123') {
-      localStorage.setItem('token', '-DIM7FRNnqLFqkgGICNN=vi7F5e=9ptuHFx8NLadvuy/PYV2mxC996/xB-ACNrVamusWZtbsFIsNiN0!Fikv7ezL1E5rBSAyiHP2f5ApLZR63Rryg--PdLoH=Y5lqUkY');
-      this.router.navigate(['editDelService']);
-    }
-    else
-      console.log('wrong password');
+    this.router.navigate(['editDelService']);
+
+    // this.admin_password = '';
+    // if (pass === 'qwe123') {
+    //   localStorage.setItem('token', '-DIM7FRNnqLFqkgGICNN=vi7F5e=9ptuHFx8NLadvuy/PYV2mxC996/xB-ACNrVamusWZtbsFIsNiN0!Fikv7ezL1E5rBSAyiHP2f5ApLZR63Rryg--PdLoH=Y5lqUkY');
+    //   this.router.navigate(['editDelService']);
+    // }
+    // else
+    //   console.log('wrong password');
   }
 }
